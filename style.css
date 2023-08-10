@@ -443,7 +443,7 @@ hr {
 
 /** ----- RWD for tablets ----- **/
 
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
     body {
         max-width: 768px;
         margin: 0 auto;
@@ -618,6 +618,7 @@ hr {
     }
     .navi_item {
         border: 1px solid #FFF;
+        border-collapse: collapse;
         justify-content: center;
         padding: 12px 0px;
         width: 185.5px;
