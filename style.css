@@ -1,7 +1,7 @@
 /** ----- body & general style ----- **/
 body {
-    font-family: Roboto, 思源黑體, "Noto Sans CJK TC";
-    margin: 0;
+    font-family: Roboto, "Noto Sans CJK TC";
+    margin: 0 auto;
     max-width: 1920px;
 }
 a {
@@ -443,9 +443,10 @@ hr {
 
 /** ----- RWD for tablets ----- **/
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     body {
         max-width: 768px;
+        margin: 0 auto;
     }
     .content_area {
         padding: 80px 4.6875%;
@@ -586,9 +587,10 @@ hr {
 
 /** ----- RWD for cell phones ----- **/
 
-@media only screen and (max-width: 375px) {
+@media (max-width: 375px) {
     body {
         max-width: 375px;
+        margin: 0 auto;
     }
     .content_area {
         padding: 40px 13px;
