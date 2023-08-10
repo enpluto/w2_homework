@@ -151,7 +151,7 @@ nav {
 .info_item img {
     height: 100px;
     margin: auto;
-    width: 100px;
+    max-width: 100px;
     margin-bottom: 16px;
 }
 .info_item p {
@@ -178,7 +178,7 @@ nav {
 .classic_item img {
     height: auto;
     margin: auto;
-    width: 416px;
+    max-width: 416px;
 }
 .style_type {
     color: #AA0601;
@@ -482,7 +482,7 @@ hr {
 
     /* --- product: classic collection --- */
     .classic_item img {
-        width: 336px;
+        max-width: 336px;
     }
     .content_container {
         flex-direction: column;
@@ -502,8 +502,11 @@ hr {
     .review_container {
         row-gap: 24px;
     }
+    .review_item {
+        flex-basis: 48.275%;
+    }
     .review_item img {
-        width: 336px;
+        max-width: 336px;
     }
 
     /* --- contact us --- */
