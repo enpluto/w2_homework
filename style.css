@@ -633,8 +633,12 @@ hr {
 
     /* ----- banner ----- */
     .banner {
+        background-image: url(img/home-header-sm.png);
         background-size: 375px 396px;
         height: 396px;
+    }
+    .banner_container {
+        padding: 0px 4%;
     }
     .banner_title {
         font-size: 16px;
