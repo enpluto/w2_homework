@@ -237,7 +237,8 @@ nav {
 .review_item img {
     height: 306px;
     object-fit: cover;
-    width: 306px;
+    max-width: 306px;
+    width: 100%;
 }
 
 /* --- contact us --- */ 
@@ -593,11 +594,11 @@ hr {
         margin: 0 auto;
     }
     .content_area {
-        padding: 40px 13px;
+        padding: 40px 3.6%;
     }
     .content_area_pink {
         background-color: #FBF2F2;
-        padding: 40px 13px;
+        padding: 40px 3.6%;
     }
     .section_title {
         font-size: 24px;
@@ -660,7 +661,7 @@ hr {
 
     /* --- product: classic collection --- */
     .classic_item img {
-        width: 348px;
+        max-width: 348px;
     }
     .content_container {
         margin-top: 24px;
@@ -670,7 +671,7 @@ hr {
     /* --- product: co-branding collection --- */
     .cobrand_item {
         height: 328px;
-        width: 348px;
+        max-width: 348px;
     }
     .cobrand_item img:first-child {
         visibility: hidden;
@@ -698,10 +699,14 @@ hr {
     .review_container {
         margin-top: 24px;
         row-gap: 16px;
+        width: 100%;
+    }
+    .review_item {
+        flex-basis: 100%;
     }
     .review_item img {
         height: 306px;
-        width: 348px;
+        max-width: 348px;
     }
 
     /* --- contact us --- */ 
