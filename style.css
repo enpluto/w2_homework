@@ -173,7 +173,9 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: auto;
     margin-top: 48px;
+    width: 100%;
     text-align: center;
 }
 .classic_item {
@@ -492,6 +494,7 @@ hr {
     .content_container {
         flex-direction: column;
         row-gap: 24px;
+        width: 90.625%;
     }
 
     /* --- product: co-branding collection --- */
@@ -518,16 +521,16 @@ hr {
 
     /* --- contact us --- */
     input, textarea {
-        width: 560px;
+        width: 100%;
     }
     .form {
-        width: 576px;
+        width: 75%; /* 576px */
     }
     .form p, label{
         font-size: 16px;
     }
     .submit_button {
-        width: 336px;
+        width: 58.33%; /* 336px */
     }
 
     /* --- Q&A --- */
@@ -683,6 +686,7 @@ hr {
         flex-direction: column;
         margin-top: 24px;
         row-gap: 24px;
+        width: 92.8%;
     }
 
     /* --- product: co-branding collection --- */
@@ -818,4 +822,35 @@ hr {
     .content_container {
         flex-direction: column;
     }
+    .content_container:last-child {
+        flex-direction: column;
+        row-gap: 24px;
+        width: 67.5%;
+    }
+    .cobrand_item img {
+        max-width: 100%;
+    }
+
+    /* --- customer reviews --- */
+    .review_container {
+        row-gap: 24px;
+    }
+    .review_item {
+        flex-basis: 48.275%;
+    }
+    .review_item img {
+        max-height: auto;
+        max-width: 100%;
+    }
 }
+
+@media (min-width: 376px) and (max-width: 525px) {
+        /* --- customer reviews --- */
+        .review_item {
+            flex-basis: 100%;
+        }
+        .review_item img {
+            max-height: auto;
+            max-width: 100%;
+        }
+    }
