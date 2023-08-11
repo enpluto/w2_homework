@@ -172,7 +172,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 48px;
     text-align: center;
 }
@@ -807,5 +807,15 @@ hr {
     .sns_icon img {
         height: 24px;
         width: 24px;
+    }
+}
+
+/** ----- RWD: adjust direction for classic collection
+            on other sizes of screen  ----- **/
+
+@media (min-width: 769px) and (max-width: 1919px) {
+    /* --- product: classic collection --- */
+    .content_container {
+        flex-direction: column;
     }
 }
