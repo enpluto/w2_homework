@@ -17,6 +17,9 @@ h2 {
 img {
     display: block;
 }
+main {
+    max-width: 1920px;
+}
 .content_area {
     padding: 80px 16.25%;
 }
@@ -123,6 +126,7 @@ nav {
     padding: 6px 12px;
 }
 
+
 /** ----- main area ----- **/
 .section_title {
     color: #650300;
@@ -197,8 +201,9 @@ nav {
 }
 .cobrand_item img {
     height: 240px;
+    max-width: 648px;
     object-fit: cover;
-    width: 648px;
+    width: 100%;
 }
 .product_cobrand {
     background-image: url(img/index-bg.png);
@@ -273,7 +278,7 @@ textarea {
 }
 .form {
     margin: auto;
-    width: 636px;
+    max-width: 636px;
 }
 .form p {
     font-size: 20px;
@@ -486,11 +491,13 @@ hr {
     }
     .content_container {
         flex-direction: column;
+        row-gap: 24px;
     }
 
     /* --- product: co-branding collection --- */
     .cobrand_item img {
-        width: 696px;
+        max-width: 696px;
+        width: 100%;
     }
     .product_cobrand {
         background-image: url(img/index-bg-sm.png);
@@ -596,6 +603,9 @@ hr {
         max-width: 375px;
         margin: 0 auto;
     }
+    main {
+        max-width: 375px;
+    }
     .content_area {
         padding: 40px 3.6%;
     }
@@ -658,6 +668,9 @@ hr {
     .banner_container {
         flex-direction: column;
     }
+    .info {
+        max-width: 375px;
+    }
     .info_item {
         flex-basis: 100%;
     }
@@ -667,6 +680,7 @@ hr {
         max-width: 348px;
     }
     .content_container {
+        flex-direction: column;
         margin-top: 24px;
         row-gap: 24px;
     }
@@ -786,6 +800,7 @@ hr {
         margin-top: 8px;
     }
     .sns_icon {
+        column-gap: 8px;
         position: absolute;
         text-align: right;
     }
